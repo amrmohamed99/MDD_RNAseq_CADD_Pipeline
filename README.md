@@ -1,7 +1,22 @@
 # MDD_RNAseq_CADD_Pipeline
 Integrated RNA-Seq analysis, Machine learning and virtual screening pipeline for Major Depressive Disorder using DESeq2, ClusterProfiler, RDKit, and AutoDock Vina 
 
-This repository contains a complete pipeline integrating **RNA-Seq analysis**, **Machine Learning (ML)**-based classification, and **Computer-Aided Drug Design (CADD)** targeting **BDNF** and **NOTCH1** for **Major Depressive Disorder (MDD)**.
+This repository provides an end-to-end **bioinformatics and cheminformatics pipeline** to analyze RNA-Seq data from **Major Depressive Disorder (MDD)** patients, apply **machine learning classifiers**, and perform **in silico drug repurposing** using FDA-approved compounds on target proteins **BDNF** and **NOTCH1**.
+
+---
+
+## 🧭 Pipeline Overview
+
+```mermaid
+flowchart TD
+    A[RNA-Seq Raw Data] --> B[DESeq2 Differential Expression]
+    B --> C[ClusterProfiler Enrichment]
+    B --> D[ML Model: Predict MDD]
+    C --> E[Target Genes: BDNF, NOTCH1]
+    E --> F[Drug Preparation (RDKit)]
+    F --> G[File Conversion (OpenBabel)]
+    G --> H[Virtual Screening (AutoDock Vina)]
+    H --> I[Top Drug Candidates]
 
 ---
 
@@ -22,18 +37,18 @@ This repository contains a complete pipeline integrating **RNA-Seq analysis**, *
 
 ---
 
-## 📁 Folder Structure
-
-RNAseq_Analysis/
-│ ├── DESeq2_analysis.R
-│ ├── enrichment_analysis.R
-│ └── ML_classification_MDD.ipynb
-
-CADD_VirtualScreening/
-│ ├── energy_minimization_rdkit.py
-│ ├── pdb_to_pdbqt_conversion.sh
-│ └── virtual_screening_vina.sh
-
+MDD_RNAseq_CADD_Pipeline/
+├── RNAseq_Analysis/
+│   ├── DESeq2.R                  # Differential expression analysis
+│   ├── GSEA.R                    # Enrichment analysis (GO, KEGG)
+│   └── ML_research.ipynb        # ML classification of MDD vs. control
+├── CADD_VirtualScreening/
+│   ├── E_rdkit.sh               # Energy minimization using RDKit
+│   ├── PDB2PDBQT                # OpenBabel-based file conversion
+│   └── virtual_screening_super.sh # AutoDock Vina batch screening
+├── .gitignore
+├── requirements.txt
+└── README.md
 
 
 ---
@@ -52,7 +67,23 @@ CADD_VirtualScreening/
 - Convert structures to PDBQT format using `pdb_to_pdbqt_conversion.sh`.
 - Run docking with `virtual_screening_vina.sh`.
 
+💊 Drug Repurposing Workflow
+Step	Tool	Description
+Energy Minimization	RDKit	Minimizes FDA drugs
+File Conversion to PDBQT	OpenBabel	Prepares for docking
+Virtual Screening	AutoDock Vina	Screens against BDNF, NOTCH1
+Output	Log files + best docking poses
 ---
+
+📦 Installation
+
+conda create -n mdd_pipeline python=3.10
+conda activate mdd_pipeline
+pip install -r requirements.txt
+
+For R dependencies:
+
+install.packages(c("DESeq2", "clusterProfiler", "org.Hs.eg.db", "ggplot2"))
 
 ## 📦 Dependencies
 
