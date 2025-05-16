@@ -52,14 +52,6 @@ MDD_RNAseq_CADD_Pipeline/
 - Convert structures to PDBQT format using `pdb_to_pdbqt_conversion.sh`.
 - Run docking with `virtual_screening_vina.sh`.
 
-💊 Drug Repurposing Workflow
-Step	Tool	Description
-Energy Minimization	RDKit	Minimizes FDA drugs
-File Conversion to PDBQT	OpenBabel	Prepares for docking
-Virtual Screening	AutoDock Vina	Screens against BDNF, NOTCH1
-Output	Log files + best docking poses
----
-
 📦 Installation
 
 conda create -n mdd_pipeline python=3.10
