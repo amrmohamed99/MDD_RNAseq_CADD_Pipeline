@@ -5,21 +5,6 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 
 ---
 
-🧭 Pipeline Overview
-
-```mermaid
-flowchart TD
-    A[RNA-Seq Raw Data] --> B[DESeq2 Differential Expression]
-    B --> C[ClusterProfiler Enrichment]
-    B --> D[ML Model: Predict MDD]
-    C --> E[Target Genes: BDNF, NOTCH1]
-    E --> F[Drug Preparation (RDKit)]
-    F --> G[File Conversion (OpenBabel)]
-    G --> H[Virtual Screening (AutoDock Vina)]
-    H --> I[Top Drug Candidates]
-
----
-
 ## 🔬 Overview
 
 1. **RNA-Seq Analysis** (R)
