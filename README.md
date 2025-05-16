@@ -1,8 +1,6 @@
 # MDD_RNAseq_CADD_Pipeline
 Integrated RNA-Seq analysis, Machine learning and virtual screening pipeline for Major Depressive Disorder using DESeq2, ClusterProfiler, RDKit, and AutoDock Vina 
 
-# MDD_RNAseq_CADD_Pipeline
-
 This repository contains a complete pipeline integrating **RNA-Seq analysis**, **Machine Learning (ML)**-based classification, and **Computer-Aided Drug Design (CADD)** targeting **BDNF** and **NOTCH1** for **Major Depressive Disorder (MDD)**.
 
 ---
