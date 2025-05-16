@@ -5,7 +5,7 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 
 ---
 
-## 🧭 Pipeline Overview
+🧭 ## Pipeline Overview
 
 ```mermaid
 flowchart TD
