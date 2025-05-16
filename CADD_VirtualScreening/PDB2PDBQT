@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo "========================================================"
+echo "Welcome, Amr Al-Hefnawy!"
+echo "AAlhfnawy@nu.edu.eg"
+echo "======================================================"
+echo "PDB to PDBQT Conversion Script using Open-Babel"
+echo "======================================================"
+
+# Ask user for input directory
+read -p "Enter the path to the directory containing .pdb files: " pdb_dir
+if [[ ! -d "$pdb_dir" ]]; then
+  echo "❌ Error: Directory not found."
+  exit 1
+fi
+
+# Check if obabel is installed
+if ! command -v obabel &> /dev/null; then
+  echo "❌ Error: Open Babel (obabel) is not installed."
+  echo "nstall it using: sudo apt install openbabel"
+  exit 1
+fi
+
+# Create output directory
+output_dir="pdbqt_output"
+mkdir -p "$output_dir"
+
+# Convert each .pdb file
+for pdb_file in "$pdb_dir"/*.pdb; do
+  [[ -e "$pdb_file" ]] || continue  # Skip if no .pdb files
+  base_name=$(basename "$pdb_file" .pdb)
+  output_file="$output_dir/$base_name.pdbqt"
+
+  obabel "$pdb_file" -O "$output_file" --partialcharge gasteiger
+
+  echo "✅ Converted: $base_name.pdb → $base_name.pdbqt"
+done
+
+echo
+echo "🎯 All files converted. Output saved in: $output_dir/"
+

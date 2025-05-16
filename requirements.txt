@@ -1,0 +1,8 @@
+rdkit
+openbabel
+Auto-dock Vina
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
