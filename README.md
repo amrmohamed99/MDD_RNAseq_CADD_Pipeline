@@ -3,8 +3,9 @@ Integrated RNA-Seq analysis, Machine learning and virtual screening pipeline for
 
 This repository provides an end-to-end **bioinformatics and cheminformatics pipeline** to analyze RNA-Seq data from **Major Depressive Disorder (MDD)** patients, apply **machine learning classifiers**, and perform **in silico drug repurposing** using FDA-approved compounds on target proteins **BDNF** and **NOTCH1**.
 
----
-Picture
+---![PEB3 Chain A-output_pose1](https://github.com/user-attachments/assets/76a4070c-ae83-4e4d-ac4a-12e6e25920c3)
+
+
 ## 🔬 Overview
 
 1. **RNA-Seq Analysis** (R)
