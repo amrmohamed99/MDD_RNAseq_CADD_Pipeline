@@ -23,6 +23,7 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 ---
 
 ## MDD_RNAseq_CADD_Pipeline/
+|
 ├── RNAseq_Analysis/
 │   ├── DESeq2.R                  
 │   ├── GSEA.R                    
