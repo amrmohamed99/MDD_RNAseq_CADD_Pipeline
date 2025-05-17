@@ -66,7 +66,7 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 
 ---
 
-📦 Installation
+## 📦 Installation
 
 conda create -n mdd_pipeline python=3.10
 conda activate mdd_pipeline
