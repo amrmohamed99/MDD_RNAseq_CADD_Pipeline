@@ -25,15 +25,21 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 ## MDD_RNAseq_CADD_Pipeline/
 |
 ├── RNAseq_Analysis/
+
 │   ├── DESeq2.R                  
 │   ├── GSEA.R                    
-│   └── ML_research.ipynb        
+│   └── ML_research.ipynb   
+
 ├── CADD_VirtualScreening/
+
 │   ├── E_rdkit.sh               
 │   ├── PDB2PDBQT                
 │   └── virtual_screening_super.sh 
+
 ├── .gitignore
+
 ├── requirements.txt
+
 └── README.md
 
 
