@@ -5,8 +5,12 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 
 ---
 
+![1](https://github.com/user-attachments/assets/906bb964-dc46-4b04-8c00-f6a055f512ea)
+
+---
 
 ## 🔬 Overview
+
 
 1. **RNA-Seq Analysis** (R)
    - Identification of Differentially Expressed Genes (DEGs) using DESeq2.
@@ -59,6 +63,8 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 - Minimize FDA drug structures using `energy_minimization_rdkit.py`.
 - Convert structures to PDBQT format using `pdb_to_pdbqt_conversion.sh`.
 - Run docking with `virtual_screening_vina.sh`.
+
+---
 
 📦 Installation
 
