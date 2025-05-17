@@ -24,13 +24,13 @@ This repository provides an end-to-end **bioinformatics and cheminformatics pipe
 
 ## MDD_RNAseq_CADD_Pipeline/
 ├── RNAseq_Analysis/
-│   ├── DESeq2.R                  # Differential expression analysis
-│   ├── GSEA.R                    # Enrichment analysis (GO, KEGG)
-│   └── ML_research.ipynb        # ML classification of MDD vs. control
+│   ├── DESeq2.R                  
+│   ├── GSEA.R                    
+│   └── ML_research.ipynb        
 ├── CADD_VirtualScreening/
-│   ├── E_rdkit.sh               # Energy minimization using RDKit
-│   ├── PDB2PDBQT                # OpenBabel-based file conversion
-│   └── virtual_screening_super.sh # AutoDock Vina batch screening
+│   ├── E_rdkit.sh               
+│   ├── PDB2PDBQT                
+│   └── virtual_screening_super.sh 
 ├── .gitignore
 ├── requirements.txt
 └── README.md
